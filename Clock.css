@@ -1,0 +1,576 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.Screen {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body{
+    height: 100vh;
+    width: 100vw;
+} */
+
+.Road {
+
+    height: 50vw;
+    width: 50vw;
+    background-color: rgb(0, 0, 0);
+    border: solid rgba(255, 255, 255, 0.300) 4px;
+
+    top: 45%;
+    left: 50%;
+    /* transform: rotateZ(-90deg); */
+
+    border-radius: 50%;
+
+    position: absolute;
+    transform: translate(-50%, -50%) rotateZ(-90deg);
+    color: white;
+    font-weight: 300;
+
+}
+
+.mass {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+
+}
+
+.Sec {
+
+    width: 46%;
+    height: 2px;
+    background-color: rgb(0, 256, 0);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+    z-index: 5;
+    transform-origin: 0% 0%;
+
+    border-radius: 10px;
+
+
+
+
+    /* transform: rotateZ(-90deg); */
+
+}
+
+.SecCircle {
+    height: 13px;
+    width: 13px;
+    background-color: rgba(0, 256, 0);
+    /* background-color: red; */
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.SecMiniCircle {
+
+    height: 7px;
+    width: 7px;
+    background-color: black;
+    border-radius: 50%;
+
+
+}
+
+.SecBox {
+
+    height: 6px;
+    width: 20px;
+    background-color: rgba(0, 256, 0);
+    /* background-color: red; */
+    border-radius: 10px;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+
+
+}
+
+
+.Min {
+
+    width: 30%;
+    height: 4px;
+    background-color: white;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* transform: rotateZ(-90deg); */
+
+    z-index: 3;
+
+    transform-origin: top left;
+
+}
+
+.MinBox {
+
+    height: 7px;
+    width: 120px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    right: -23px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    z-index: 50;
+}
+
+.Hour {
+
+    width: 20%;
+    height: 4px;
+    background-color: red;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translateY(-50%);
+    bottom: 3px;
+
+    /* transform: rotateZ(-90deg); */
+
+
+    z-index: 4;
+
+    transform-origin: top left;
+
+}
+
+.HourBox {
+
+    height: 7px;
+    width: 70px;
+    background-color: red;
+    border-radius: 10px;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+
+.points {
+    height: 85%;
+    width: 4px;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+    border-radius: 10px;
+
+}
+
+.pointscolor {
+    height: 88%;
+    width: 2px;
+    /* border-top: solid rgba(255, 0, 0, 0.700) 10px;
+    border-bottom: solid rgba(255, 0, 0, 0.700) 10px; */
+
+    border-top: solid rgba(255, 255, 255, 0.100) 10px;
+    border-bottom: solid rgba(255, 255, 255, 0.100) 10px;
+
+}
+
+.p126 {
+    transform: translate(-50%, -50%) rotateZ(90deg);
+    border-top: solid white 15px;
+    border-bottom: solid white 15px;
+}
+
+.p17 {
+    transform: translate(-50%, -50%) rotateZ(120deg);
+    border-top: solid white 15px;
+    border-bottom: solid white 15px;
+}
+
+.p28 {
+    transform: translate(-50%, -50%) rotateZ(150deg);
+    border-top: solid white 15px;
+    border-bottom: solid white 15px;
+}
+
+.p39 {
+    transform: translate(-50%, -50%) rotateZ(180deg);
+    border-top: solid white 15px;
+    border-bottom: solid white 15px;
+}
+
+.p410 {
+    transform: translate(-50%, -50%) rotateZ(210deg);
+    border-top: solid white 15px;
+    border-bottom: solid white 15px;
+}
+
+.p511 {
+    transform: translate(-50%, -50%) rotateZ(240deg);
+    border-top: solid white 15px;
+    border-bottom: solid white 15px;
+}
+
+.twelve {
+    transform: rotateZ(0deg);
+}
+
+.one {
+    transform: rotateZ(-30deg);
+}
+
+.two {
+    transform: rotateZ(-60deg);
+}
+
+.three {
+    transform: rotateZ(-90deg);
+}
+
+.four {
+    transform: rotateZ(-120deg);
+}
+
+.five {
+    transform: rotateZ(-150deg);
+}
+
+.six {
+    transform: rotateZ(0deg);
+}
+
+.seveen {
+    transform: rotateZ(-30deg);
+}
+
+.eight {
+    transform: rotateZ(-60deg);
+}
+
+.nine {
+    transform: rotateZ(-90deg);
+}
+
+.ten {
+    transform: rotateZ(-120deg);
+}
+
+.eleven {
+    transform: rotateZ(-150deg);
+}
+
+
+
+
+label {
+    font-weight: 900;
+}
+
+.DigClo {
+
+    font-size: medium;
+    font-weight: 600;
+    height: 40px;
+    width: 100px;
+    background-color: rgba(255, 228, 196, 0.171);
+    border-radius: 2px;
+    position: absolute;
+    left: 55%;
+    top: 70%;
+    transform: translate(-50%, -50%) rotateZ(90deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Cir {
+    height: 20px;
+    width: 20px;
+    background-color: powderblue;
+    border-radius: 50%;
+
+    position: absolute;
+    /* z-index: 5; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* display:none; */
+}
+
+.ClockImg {
+    scale: 1.2;
+    position: absolute;
+
+    rotate: 1.55deg;
+
+
+
+    box-shadow: none;
+}
+
+.Contrals {
+
+    position: absolute;
+    /* z-index: 5; */
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%, -50%);
+
+}
+
+.FixTime {
+    width: 200px;
+    height: 160px;
+    /* Increased height */
+    border: 2px solid;
+    position: absolute;
+
+    bottom: 8%;
+    /* Adjusted top position */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: none;
+}
+
+.DFlex {
+
+    display: flex;
+
+}
+
+
+.Ok {
+    display: none;
+}
+
+.DBlock {
+    display: block;
+}
+
+/* 
+.Closer1{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.838);
+    width: 100%;
+    height: 40%;
+
+
+}
+
+.Closer2{
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.838);
+    width: 100%;
+    height: 40%;
+
+
+} */
+
+.fixtimebutton {
+    width: 50px;
+    background-color: black;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.AddWhite {
+    /* background-color: blue; */
+    color: white;
+}
+
+.AddBlack {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.24);
+}
+
+.hours,
+.minutes,
+.seconds,
+.meds {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    /* color: rgba(255, 255, 255, 0.24); */
+    font-size: large;
+    flex-shrink: 0;
+    border: 1px solid black;
+}
+
+.fixtimebutton::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+@media only screen and (max-width:4000px) {
+
+
+
+    .Road {
+
+        height: 30vw;
+        width: 30vw;
+       
+
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width:1024px) {
+
+
+
+    .Road {
+
+        height: 50vw;
+        width: 50vw;
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+
+
+    .Road {
+
+        top:35%;
+        height: 90vw;
+        width: 90vw;
+       
+    }
+
+    .DigClo {
+
+        font-size: small;
+        font-weight: 500;
+        width: 85px;
+        height: 35px;
+    }
+
+    .FixTime {
+
+        bottom: 15%;
+
+
+    }
+
+}
+
+
+@media only screen and (max-width:375px) {
+
+    .points {
+
+        font-size: x-large;
+        width: 3px;
+
+    }  
+
+    .Min{
+
+        height: 2px;
+
+    }
+
+    .SecBox {
+
+        height: 4px;
+        width: 20px;
+
+        left: 1%;
+        top: 50%;
+
+    }
+
+    .MinBox {
+
+        height: 5px;
+        width: 80px;
+    }
+
+
+    .Hour {
+
+        
+        height: 2px;
+
+    
+    }
+    
+    .HourBox {
+    
+        height: 6px;
+        width: 50px;
+        left: 80%;
+    }
+
+}

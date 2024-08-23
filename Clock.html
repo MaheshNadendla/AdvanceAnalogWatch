@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clock</title>
+  <link rel="stylesheet" href="Clock.css" />
+</head>
+
+<body>
+
+ 
+  <audio id="background-music" src="SecSound.mp3" loop></audio>
+
+  <div class="Screen">
+
+    <!-- Audio element -->
+  
+
+  <!-- Optional: A button to control playback -->
+  
+
+    <div class="Road">
+      <div class="Min">
+        <div class="MinBox"></div>
+      </div>
+
+      <div class="Sec">
+        <div class="SecCircle">
+          <div class="SecMiniCircle"></div>
+        </div>
+        <div class="SecBox"></div>
+      </div>
+
+      <div class="Hour">
+        <div class="HourBox"></div>
+      </div>
+
+      <div class="points p126">
+        <span class="twelve">12</span>
+        <span class="six">6</span>
+      </div>
+
+      <div class="points p17">
+        <span class="one">1</span>
+        <span class="seveen">7</span>
+      </div>
+
+      <div class="points p28">
+        <span class="two">2</span>
+        <span class="eight">8</span>
+      </div>
+
+      <div class="points p39">
+        <span class="three">3</span>
+        <span class="nine">9</span>
+      </div>
+
+      <div class="points p410">
+        <span class="four">4</span>
+        <span class="ten">10</span>
+      </div>
+
+      <div class="points p511">
+        <span class="five">5</span>
+        <span class="eleven">11</span>
+      </div>
+
+      <div class="Cir"></div>
+      <div class="DigClo"></div>
+    </div>
+
+    <div class="FixTime">
+
+      <!-- <div class="Closer1">hello</div>
+      <div class="Closer2">hello</div> -->
+
+      <div class="mederian fixtimebutton" id="medsContainer">
+
+        <div class="mex meds"></div>
+        <div class="mex meds"></div>
+        <div class="mex1 meds">AM</div>
+        <div class="mex2 meds">PM</div>
+        <div class="mex meds"></div>
+        <div class="mex meds"></div>
+
+      </div>
+      <div class="hrs fixtimebutton" id="hoursContainer">
+        <div class="hx hours"></div>
+        <div class="hx hours"></div>
+        <div class="h1 hours">01</div>
+        <div class="h2 hours">02</div>
+        <div class="h3 hours">03</div>
+        <div class="h4 hours">04</div>
+        <div class=" hours h5">05</div>
+        <div class="h6 hours">06</div>
+        <div class="h7 hours">07</div>
+        <div class="h8 hours">08</div>
+        <div class="h9 hours">09</div>
+        <div class="h10 hours">10</div>
+        <div class="h11 hours">11</div>
+        <div class="h12 hours">12</div>
+        <div class="hx hours"></div>
+        <div class="hx hours"></div>
+      </div>
+      <div class="mins fixtimebutton" id="minsContainer">
+        <div class="minutes mx"></div>
+        <div class="minutes mx"></div>
+        <div class="minutes m0">00</div>
+        <div class="minutes m1">01</div>
+        <div class="minutes m2">02</div>
+        <div class="minutes m3">03</div>
+        <div class="minutes m4">04</div>
+        <div class="minutes m5">05</div>
+        <div class="minutes m6">06</div>
+        <div class="minutes m7">07</div>
+        <div class="minutes m8">08</div>
+        <div class="minutes m9">09</div>
+        <div class="minutes m10">10</div>
+        <div class="minutes m11">11</div>
+        <div class="minutes m12">12</div>
+        <div class="minutes m13">13</div>
+        <div class="minutes m14">14</div>
+        <div class="minutes m15">15</div>
+        <div class="minutes m16">16</div>
+        <div class="minutes m17">17</div>
+        <div class="minutes m18">18</div>
+        <div class="minutes m19">19</div>
+        <div class="minutes m20">20</div>
+        <div class="minutes m21">21</div>
+        <div class="minutes m22">22</div>
+        <div class="minutes m23">23</div>
+        <div class="minutes m24">24</div>
+        <div class="minutes m25">25</div>
+        <div class="minutes m26">26</div>
+        <div class="minutes m27">27</div>
+        <div class="minutes m28">28</div>
+        <div class="minutes m29">29</div>
+        <div class="minutes m30">30</div>
+        <div class="minutes m31">31</div>
+        <div class="minutes m32">32</div>
+        <div class="minutes m33">33</div>
+        <div class="minutes m34">34</div>
+        <div class="minutes m35">35</div>
+        <div class="minutes m36">36</div>
+        <div class="minutes m37">37</div>
+        <div class="minutes m38">38</div>
+        <div class="minutes m39">39</div>
+        <div class="minutes m40">40</div>
+        <div class="minutes m41">41</div>
+        <div class="minutes m42">42</div>
+        <div class="minutes m43">43</div>
+        <div class="minutes m44">44</div>
+        <div class="minutes m45">45</div>
+        <div class="minutes m46">46</div>
+        <div class="minutes m47">47</div>
+        <div class="minutes m48">48</div>
+        <div class="minutes m49">49</div>
+        <div class="minutes m50">50</div>
+        <div class="minutes m51">51</div>
+        <div class="minutes m52">52</div>
+        <div class="minutes m53">53</div>
+        <div class="minutes m54">54</div>
+        <div class="minutes m55">55</div>
+        <div class="minutes m56">56</div>
+        <div class="minutes m57">57</div>
+        <div class="minutes m58">58</div>
+        <div class="minutes m59">59</div>
+        <div class="minutes mx"></div>
+        <div class="minutes mx"></div>
+
+      </div>
+      <div class="secs fixtimebutton" id="secsContainer">
+        <div class="seconds sx"></div>
+        <div class="seconds sx"></div>
+        <div class="seconds s0">00</div>
+        <div class="seconds s1">01</div>
+        <div class="seconds s2">02</div>
+        <div class="seconds s3">03</div>
+        <div class="seconds s4">04</div>
+        <div class="seconds s5">05</div>
+        <div class="seconds s6">06</div>
+        <div class="seconds s7">07</div>
+        <div class="seconds s8">08</div>
+        <div class="seconds s9">09</div>
+        <div class="seconds s10">10</div>
+        <div class="seconds s11">11</div>
+        <div class="seconds s12">12</div>
+        <div class="seconds s13">13</div>
+        <div class="seconds s14">14</div>
+        <div class="seconds s15">15</div>
+        <div class="seconds s16">16</div>
+        <div class="seconds s17">17</div>
+        <div class="seconds s18">18</div>
+        <div class="seconds s19">19</div>
+        <div class="seconds s20">20</div>
+        <div class="seconds s21">21</div>
+        <div class="seconds s22">22</div>
+        <div class="seconds s23">23</div>
+        <div class="seconds s24">24</div>
+        <div class="seconds s25">25</div>
+        <div class="seconds s26">26</div>
+        <div class="seconds s27">27</div>
+        <div class="seconds s28">28</div>
+        <div class="seconds s29">29</div>
+        <div class="seconds s30">30</div>
+        <div class="seconds s31">31</div>
+        <div class="seconds s32">32</div>
+        <div class="seconds s33">33</div>
+        <div class="seconds s34">34</div>
+        <div class="seconds s35">35</div>
+        <div class="seconds s36">36</div>
+        <div class="seconds s37">37</div>
+        <div class="seconds s38">38</div>
+        <div class="seconds s39">39</div>
+        <div class="seconds s40">40</div>
+        <div class="seconds s41">41</div>
+        <div class="seconds s42">42</div>
+        <div class="seconds s43">43</div>
+        <div class="seconds s44">44</div>
+        <div class="seconds s45">45</div>
+        <div class="seconds s46">46</div>
+        <div class="seconds s47">47</div>
+        <div class="seconds s48">48</div>
+        <div class="seconds s49">49</div>
+        <div class="seconds s50">50</div>
+        <div class="seconds s51">51</div>
+        <div class="seconds s52">52</div>
+        <div class="seconds s53">53</div>
+        <div class="seconds s54">54</div>
+        <div class="seconds s55">55</div>
+        <div class="seconds s56">56</div>
+        <div class="seconds s57">57</div>
+        <div class="seconds s58">58</div>
+        <div class="seconds s59">59</div>
+        <div class="seconds sx"></div>
+        <div class="seconds sx"></div>
+
+      </div>
+    </div>
+    
+    <p>Current Hour: <span id="currentHour">1</span></p>
+
+
+    <div class="Contrals">
+      <button class="Ok" onclick="Ok()">Ok</button>
+      <button class="SetTime" onclick="SetTime()">SetTime</button>
+      
+      <button class="Pause" onclick="Stop()">Stop</button>
+      <button class="Start" onclick="Start()">Start</button>
+      <button class="Reset" onclick="GetSystemTime()">Reset</button>
+      
+      <button class="PlaySound" onclick="playAudio()">Play</button>
+
+    </div>
+
+    <script src="Clock.js"></script>
+</body>
+
+</html>
